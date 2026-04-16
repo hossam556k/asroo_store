@@ -1,3 +1,4 @@
+import 'package:asroo_store/core/app/env.variable.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -8,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'asroo_store',
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: EnvVariable.instance.debugMode,
       theme: ThemeData(
       ),
       home: Scaffold(appBar: AppBar(
