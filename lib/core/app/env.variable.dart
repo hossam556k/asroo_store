@@ -5,7 +5,7 @@ enum EnvTyoeEnum {dev, prod}
 class EnvVariable {
   EnvVariable._();
   static final EnvVariable instance=EnvVariable._();
-  String _envType="";
+  String _envType='';
 
   Future<void> init({required EnvTyoeEnum envType}) async {
     switch (envType) {
