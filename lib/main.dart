@@ -2,8 +2,13 @@ import 'dart:io';
 
 import 'package:asroo_store/asroo_store.dart';
 import 'package:asroo_store/core/app/env.variable.dart';
+<<<<<<< HEAD
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+=======
+import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+>>>>>>> e41835c63c998399c1ff7a4dfd3b7f3473268683
 import 'package:flutter/services.dart';
 
 void main() async{

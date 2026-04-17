@@ -9,6 +9,11 @@ import 'package:asroo_store/asroo_store.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+<<<<<<< HEAD
+=======
+import 'package:asroo_store/main.dart';
+
+>>>>>>> e41835c63c998399c1ff7a4dfd3b7f3473268683
 void main() {
   testWidgets('Counter increments smoke test', (tester) async {
     // Build our app and trigger a frame.
