@@ -1,0 +1,80 @@
+name: asroo_store
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  firebase_core: ^4.7.0
+  connectivity_plus: ^7.1.1
+  flutter_dotenv: ^6.0.0
+  flutter_screenutil: ^5.9.3
+  lottie: ^3.3.3
+
+
+
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  
+  flutter_lints: ^6.0.0
+  very_good_analysis: ^10.2.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "asstes/images/app_icon.jpg" # تأكد من المسار والامتداد الصح
+  remove_alpha_ios: true
+
+  
+flutter:
+
+  
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+     - asstes/images/
+     - .env.dev
+     - .env.prod
+
+  
+  fonts:
+  #Arabic fonts
+    - family: Cairo
+      fonts:
+         - asset: asstes/fonts/arabic/cairo/Cairo-Bold.ttf
+           weight: 700
+         - asset: asstes/fonts/arabic/cairo/Cairo-Medium.ttf
+           weight: 500
+         - asset: asstes/fonts/arabic/cairo/Cairo-Regular.ttf
+           weight: 400
+
+  
+    - family: Poppins
+      fonts:
+          - asset: asstes/fonts/english/poppins/Poppins-Bold.ttf
+            weight: 700
+          - asset: asstes/fonts/english/poppins/Poppins-Medium.ttf
+            weight: 500
+          - asset : asstes/fonts/english/poppins/Poppins-Regular.ttf
+            weight: 400
+
