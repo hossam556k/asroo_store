@@ -1,6 +1,9 @@
+import 'package:asroo_store/core/style/themes/colors_extension.dart';
 import 'package:flutter/material.dart';
 
 extension ConstantExtensions on BuildContext {
+
+  MyColors get colors => Theme.of(this).extension<MyColors>()!;
   Future<dynamic> pushNamed(String routeName, {Object? arguments})
   {
 

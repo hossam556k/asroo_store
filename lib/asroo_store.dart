@@ -1,8 +1,8 @@
 import 'package:asroo_store/core/app/env.variable.dart';
-<<<<<<< HEAD
 import 'package:asroo_store/core/app/generate_router.dart';
 import 'package:asroo_store/core/app/netwoek_check.dart';
 import 'package:asroo_store/core/app/route_names.dart';
+import 'package:asroo_store/core/style/themes/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:asroo_store/core/app/netwoek_check.dart';
@@ -28,26 +28,15 @@ class MyApp extends StatelessWidget {
           
             title: 'asroo_store',
             debugShowCheckedModeBanner: EnvVariable.instance.debugMode,
-            theme: ThemeData(
-              scaffoldBackgroundColor: Colors.white
-            ),
+            theme: themeDark(),
           
           initialRoute: isOnline? RouteNames.home : RouteNames.noNetwork,
           onGenerateRoute: AppRoute.generateRoute, 
               
           ),
-=======
-        return MaterialApp(
-          title: 'asroo_store',
-          debugShowCheckedModeBanner: EnvVariable.instance.debugMode,
-          theme: ThemeData(),
-
-          home: isOnline
-              ? Scaffold(appBar: AppBar(title: const Text("asroo storee"),),)
-              : const NoNetworkScreen(),
->>>>>>> e41835c63c998399c1ff7a4dfd3b7f3473268683
-        );
-      },
+  
     );
-  }
+      
+  });
+}
 }
