@@ -27,7 +27,7 @@ void initState() {
           mainAxisAlignment:  MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Lottie.asset('asstes/images/splash.json',fit: BoxFit.fill)
+            Lottie.asset('assets/images/splash.json',fit: BoxFit.fill)
           ],
         ),
       );

@@ -1,3 +1,5 @@
+import 'package:asroo_store/core/extensions/constant_extensions.dart';
+import 'package:asroo_store/core/style/images/images_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -17,7 +19,7 @@ class _NoNetworkScreenState extends State<NoNetworkScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Lottie.asset('asstes/images/Wifi loading Lottie Animation.json')
+          Lottie.asset(ImagesHelper.noNetworkImage,fit: BoxFit.cover)
         ],
       )
       ,)),

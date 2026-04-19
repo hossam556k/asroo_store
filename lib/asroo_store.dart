@@ -3,6 +3,7 @@ import 'package:asroo_store/core/app/generate_router.dart';
 import 'package:asroo_store/core/app/netwoek_check.dart';
 import 'package:asroo_store/core/app/route_names.dart';
 import 'package:asroo_store/core/style/themes/app_theme.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:asroo_store/core/app/netwoek_check.dart';
@@ -25,10 +26,14 @@ class MyApp extends StatelessWidget {
           designSize: const Size(375, 812),
           minTextAdapt: true,
           child: MaterialApp(
+            locale: context.locale,
+              supportedLocales: context.supportedLocales,
+               localizationsDelegates: context.localizationDelegates,
+
           
             title: 'asroo_store',
             debugShowCheckedModeBanner: EnvVariable.instance.debugMode,
-            theme: themeDark(),
+            theme: themeLight(),
           
           initialRoute: isOnline? RouteNames.home : RouteNames.noNetwork,
           onGenerateRoute: AppRoute.generateRoute, 
