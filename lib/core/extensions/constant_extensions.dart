@@ -12,7 +12,8 @@ extension ConstantExtensions on BuildContext {
   MyAssets get images => Theme.of(this).extension<MyAssets>()!;
   MyColors get colors => Theme.of(this).extension<MyColors>()!;
 
-TextStyle get textStyle => Theme.of(this).textTheme.displaySmall!;   String tr(String key) => key.tr();
+TextStyle get textStyle => Theme.of(this).textTheme.displaySmall!;  
+ String tr(String key) => key.tr();
 
 
   Future<dynamic> pushNamed(String routeName, {Object? arguments}) {

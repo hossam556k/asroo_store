@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
           
             title: 'asroo_store',
             debugShowCheckedModeBanner: EnvVariable.instance.debugMode,
-            theme: themeLight(),
+            theme: themeDark(),
           
           initialRoute: isOnline? RouteNames.home : RouteNames.noNetwork,
           onGenerateRoute: AppRoute.generateRoute, 

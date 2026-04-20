@@ -1,5 +1,5 @@
 import 'package:asroo_store/core/app/route_names.dart';
-import 'package:asroo_store/features/login/presnation/views/login_view.dart';
+import 'package:asroo_store/features/auth/screens/login_screen.dart';
 import 'package:asroo_store/features/no_network/no_network.dart';
 import 'package:asroo_store/features/splash_view/splash_view.dart';
 import 'package:flutter/material.dart';
