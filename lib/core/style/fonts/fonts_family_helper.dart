@@ -1,5 +1,5 @@
 class FontsFamilyHelper {
-  static const String arabicFont = 'Cairo';
+  static const String arabicFont = 'cairo';
   static const String englishFont= 'poppins';
 
   static String getFontByLocale(){
